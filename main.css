@@ -1,0 +1,159 @@
+/*General*/
+:root {
+    --dark: #FED2AA;
+    --primary: #F3F0D7;
+    --secondary: #F3F0D7;
+    --secondary-back: rgb(255, 191, 134, 0.60);
+    --light: rgb(92, 61, 46);
+    --font: 'Handlee', cursive;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: var(--dark);
+    font-family: var(--font);
+    background-image: url(./assets/patita.png);
+    background-size: 50px;
+    background-position: center center 100px;
+}
+
+h2 {
+    margin-top: 30px;
+    margin-bottom: 2px;
+
+    font-size: 1.5rem;
+    color: var(--light);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+    margin-top: 30px;
+}
+
+/*Upload section*/
+.contenedor-upload {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    max-width: 1000px;
+    min-width: 100px;
+    width: 90%;
+    margin: 8px;
+    border: 1px solid var(--light);
+    background-color: var(--secondary-back);
+    padding: 20px 0;
+
+    border-radius: 20px;
+}
+
+.select-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    max-width: 350px;
+    width: 70%;
+    height: 80px;
+    border: 0.5px solid var(--light);
+
+    font-size: 1.2rem;
+    color: var(--light);
+
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: var(--primary);
+}
+
+.images-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    max-width: 1000px;
+    min-width: 100px;
+    width: 90%;
+    margin: 8px;
+    border: 1px solid var(--light);
+    padding: 40px 0;
+    background-color: var(--secondary-back);
+
+    border-radius: 20px;
+}
+
+.btn-upload {
+    display: none;
+}
+
+input {
+    display: none;
+}
+
+/*Random kittens*/
+.michi-container {
+    width: 90%;
+    min-width: 100px;
+    height: 20%;
+    min-height: 100px;
+    position: relative;
+}
+
+.icon {
+    position: absolute;
+    display: inline-block;
+    color: var(--light);
+    font-size: 1.5rem;
+    right: 12px;
+    top: 12px;
+    font-weight: bolder;
+    cursor: pointer;
+}
+
+img {
+    max-width: 300px;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    border: 1px solid var(--light);
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    width: 200px;
+    height: 40px;
+    border: 0.5px solid var(--light);
+    margin-top: 12px;
+
+    color: var(--light);
+    font-size: 1rem;
+
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: var(--primary);
+}
+
+#preview-container > img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+@media (min-width: 500px) {
+    .michi-container {
+        width: 30%;
+    }
+}

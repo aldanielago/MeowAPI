@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link href="https://fonts.googleapis.com/css2?family=Handlee&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link rel="stylesheet" href="main.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+		<link rel="icon" type="image/svg" href="./assets/hearts.svg"/>
+		<title>The cat API</title>
+	</head>
+	<body>
+		<section class="container">
+			<h2>Upload a photo of your kitten</h2>
+			<form id="upload-form" class="contenedor-upload">
+				<label for="file" class="select-photo">Select a photo</label>
+				<input id="file" type="file" name="file">
+				<div id="preview-container">
+					<!-- Imagen inyectada desde js -->
+				</div>
+				<button id="upload-photo" class="btn-upload" type="button"><i class="bi bi-upload"></i>Upload kitten</button>
+			</form>
+		</section>
+
+		<section class="container">
+			<h2>Random kittens</h2>
+			<div class="images-container">
+				<div class="michi-container">
+					<img id="img1-ram" alt="Gatito">
+					<span class="icon"><i id="cat1-ram" class="bi bi-heart" position-absolute top-0 start-0></i></span>
+				</div>
+				<div class="michi-container">
+					<img id="img2-ram" alt="Gatito">
+					<span class="icon"><i id="cat2-ram" class="bi bi-heart" position-absolute top-0 start-0></i></span>
+				</div>
+				<div class="michi-container">
+					<img id="img3-ram" alt="Gatito">
+					<span class="icon"><i id="cat3-ram" class="bi bi-heart" position-absolute top-0 start-0></i></span>
+				</div>
+			</div>
+			<button id="btn_random">Change kittens</button>
+		</section>
+
+		<section class="container">
+			<h2>Kittens saved</h2>
+			<div id="kittens-saved" class="images-container">
+					<!-- Contenido inyectado con JS -->
+			</div>
+		</section>
+
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+		<script src="./main.js"></script>
+	</body>
+</html>
